@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+}
+.container::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.box-1, .box-2, .box-3, .box-4 {
+    width: 25vw;
+    height: 25vw;
+    line-height: 25vw;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    float: left;
+    background-color: wheat;
+    margin: 20px;
+    font-size: 30px;
+    font-style: bold;
+    
+}
+
+.box-3 {
+    clear: both;
+}
